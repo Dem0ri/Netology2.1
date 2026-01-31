@@ -8,7 +8,10 @@ public class Main {
         System.out.print("Введите стоимость билета в рублях: ");
         int price = scanner.nextInt();
 
-        System.out.println("За билет стоимостью " + price + " рублей начислено " + UniversalSteps.formula(price) + "миль." );
-
+        System.out.println("За билет стоимостью " + price + " рублей начислено " + formula(price) + "миль." );
+    }
+    public static int formula(int price) {
+        int bonusesForRubles = 20;
+        return price / bonusesForRubles;
     }
 }
